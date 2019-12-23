@@ -1,0 +1,203 @@
+#body {
+        background-attachment: fixed; 
+        background-size: cover;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+.bg1 {
+    background: url("https://user-images.githubusercontent.com/33910565/70871361-3062c400-1fa7-11ea-9ea2-a308cb7e5c36.jpg");
+}
+
+.bg2 {
+    background: url("https://user-images.githubusercontent.com/33910565/70872484-2d6cd100-1fb1-11ea-945d-c68389387faf.jpg");
+}
+
+.bg3 {
+    background: url("https://user-images.githubusercontent.com/33910565/70872485-2e056780-1fb1-11ea-9efe-d3e9a4c433b9.jpg");
+}
+
+.bg4 {
+    background: url("https://user-images.githubusercontent.com/33910565/70872486-2e056780-1fb1-11ea-9082-b61113ff85e3.jpg");
+}
+/* 5 is not good for pc*/
+.bg5 {
+    background: url("https://user-images.githubusercontent.com/33910565/70872487-2e9dfe00-1fb1-11ea-84e9-b166dd2d9351.jpg");}
+
+.bg6 {
+    background: url("https://user-images.githubusercontent.com/33910565/70872488-2f369480-1fb1-11ea-97da-cccc5646cf56.jpg");
+}
+
+.bg7 {
+    background: url("https://user-images.githubusercontent.com/33910565/70872491-3198ee80-1fb1-11ea-8b05-4663e88ae440.jpg");
+}
+
+.bg8 {
+    background: url("https://user-images.githubusercontent.com/33910565/70872494-32ca1b80-1fb1-11ea-9d36-5f80e5b9e9a9.jpg");
+}
+.bg9 {
+    background: url("https://user-images.githubusercontent.com/33910565/70870807-a44d9e00-1fa0-11ea-95e4-f87817e723fa.jpg");
+}
+
+body {
+        background: url("https://user-images.githubusercontent.com/33910565/70870807-a44d9e00-1fa0-11ea-95e4-f87817e723fa.jpg");
+}
+
+container {
+    width: 50rem;
+    height: 20rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+li{
+    margin-top: 6px !important;
+}
+
+@media (min-width: 375px) and (max-width: 414px){
+    container {
+        /* margin-top: 8px; */
+        width: 20rem;
+        height: 38rem;
+    }
+    #btn1 {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+}
+
+@media (min-width: 414px) and (max-width: 736px){
+    container {
+        width: 22rem;
+        height: 39rem;
+    }
+}
+
+container:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+@media (max-width: 640px){
+    form{
+        margin-top: 160px;
+    }
+}
+@media (max-width: 360px){
+    form{
+        margin-top: 32px;
+        margin-bottom: 48px;
+    }
+    container{
+        width: 21rem;
+    } 
+}
+
+@media (max-width: 320px){
+    container{
+        width: 18rem;
+    }
+}
+
+.extend{
+    width: 100%;
+}
+
+textarea {
+    scrollbar-width: none;
+    overflow-y: scroll;
+    
+    height: 100px;
+    width:500px;
+    resize: none;
+    
+    background-color:#FFF;
+	color:#222;
+    
+    font-family:  -apple-system, BlinkMacSystemFont, 
+        "Segoe UI", Roboto, 
+        "Helvetica Neue", Arial, 
+        "Noto Sans", sans-serif, 
+        "Apple Color Emoji", "Segoe UI Emoji", 
+        "Segoe UI Symbol", "Noto Color Emoji";
+
+	font-weight:normal;
+    
+    
+    line-height:1.5;
+
+    -webkit-border-radius:8px;
+	border-radius:8px;
+	/* -webkit-box-shadow: 0px 2px 14px #000; */
+	/* box-shadow: 0px 2px 14px #000; */
+	border-top:1px solid #FFF;
+    border-bottom:1px solid #FFF;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+
+    padding-left: 4px;
+    padding-right: 0px;
+    padding-top: 0px;
+    
+}::-webkit-scrollbar { width: 0 !important }
+
+
+@media (min-width: 320px) and (max-width: 320px){
+    textarea{
+        width: 16.5rem !important;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 360px){
+    textarea{
+        width: 19.5rem !important;
+    }
+}
+
+@media (max-width: 640px){
+    textarea{
+        width: 20rem;
+    }
+}
+
+@media (max-width: 960px){
+    textarea{
+        width: 18.5rem;
+    }
+}
+
+.all_margin{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+label{
+    float: left;
+}
+
+.sent_message{
+    float: left;
+    margin-left: 2px;
+}
+
+.list{
+    text-align: center;
+    margin-top: 9rem;
+}
