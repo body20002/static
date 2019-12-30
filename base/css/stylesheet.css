@@ -153,11 +153,16 @@ textarea {
     border-right-style: solid;
 
     padding-left: 4px;
-    padding-right: 0px;
+    padding-right: 4px;
     padding-top: 0px;
     
 }::-webkit-scrollbar { width: 0 !important }
 
+@media not (min-width: 960px){
+    .textareaPhone{
+        height: 300px !important;
+    }
+}
 
 @media (min-width: 320px) and (max-width: 320px){
     textarea{
